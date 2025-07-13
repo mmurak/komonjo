@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>『古文書大字典』検索</title>
+		<link rel="shortcut icon" href="kiwi-bird.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./daijiten.css">
+	</head>
+	<body>
+		<h3>『古文書大字典』（1987）検索ヘルパー</h3>
+		<div class="container-flex">
+			<div class="left-section-flex">
+				<div class="input-row">
+					<label for="index">索引検索：</label>
+					<input type="textfield" id="EntryField" placeholder="ひらがな又はカタカナ"></input>
+				</div>
+				<div class="input-row">
+					<label for="index">漢字番号：</label>
+					<input type="textfield" id="KanjiNoField"placeholder="半角数字で入力"></input>
+				</div>
+				<div class="input-row">
+					<div>部首検索：</div>
+					<table id="StrokeIdTable" style="text-align: center;border-spacing: 0;" border="1">
+						<tr>
+							<td><button onclick="javascript:setBushu(1);">一画</button></td>
+							<td><button onclick="javascript:setBushu(2);">二画</button></td>
+							<td><button onclick="javascript:setBushu(3);">三画</button></td>
+							<td><button onclick="javascript:setBushu(4);">四画</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setBushu(5);">五画</button></td>
+							<td><button onclick="javascript:setBushu(6);">六画</button></td>
+							<td><button onclick="javascript:setBushu(7);">七画</button></td>
+							<td><button onclick="javascript:setBushu(8);">八画</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setBushu(9);">九画</button></td>
+							<td><button onclick="javascript:setBushu(10);">十画</button></td>
+							<td><button onclick="javascript:setBushu(11);">十一画</button></td>
+							<td><button onclick="javascript:setBushu(12);">十二画</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setBushu(13);">十三画</button></td>
+							<td><button onclick="javascript:setBushu(14);">十四画</button></td>
+							<td><button onclick="javascript:setBushu(15);">十五画</button></td>
+							<td><button onclick="javascript:setBushu(16);">十六画</button></td>
+						</tr>
+					</table>
+					<div>　</div>
+				</div>
+				<div class="input-row">
+					<label for="index">まえがき等：</label>
+					<select id="PreambleSelector"></select>
+				</div>
+				<div class="input-row">
+					<label for="index">各種便利帳：</label>
+					<select id="ReferenceSelector"></select>
+				</div>
+				<div class="input-row">
+					<label for="index">図版：</label>
+					<select id="FigureSelector"></select>
+				</div>
+				<div class="input-row">
+					<label for="index">史料・用例：</label>
+					<select id="UsageSelector"></select>
+				</div>
+			</div>
+			<div id="CandidatePanel" class="right-content"></div>
+		</div>
+		<div class="footer">
+		使用するには国立国会図書館デジタルコレクションの<a href="https://www.ndl.go.jp/jp/use/digital_transmission/individuals_index.html">個人向けデジタル化資料送信サービス</a>に登録、ログインしておく必要があります。
+		</div>
+
+		<script src="./assets/fullIndex.js"></script>
+		<script src="./scripts/daijiten.js"></script>
+	</body>
+</html>
