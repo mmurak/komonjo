@@ -63,7 +63,7 @@ function directOpen() {
 		}
 		window.open("https://dl.ndl.go.jp/pid/12205340/1/" + (kID[0]+ptr), "漢字通し番号検索");
 	} else if (kNo.match(/^\s*$/)) {
-		return;
+		G.kanjiNoField.value = "";
 	} else {
 		alert(kNo + " : 漢字の通し番号を入力してください。");
 	}
