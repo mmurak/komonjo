@@ -36,6 +36,7 @@ function incrementalSearch() {
 
 function search(target) {
 	G.candidatePanel.innerHTML = "";
+	if (target == "")  return;
 	for (let i = 1; i < kanjiIndex.length; i++) {
 		if (kanjiIndex[i].indexOf(target) == 0) {
 			const div = document.createElement("div");
@@ -61,8 +62,10 @@ function directOpen() {
 			ptr--;
 		}
 		window.open("https://dl.ndl.go.jp/pid/12205340/1/" + (kID[0]+ptr), "漢字通し番号検索");
+	} else if (kNo.match(/^\s*$/)) {
+		return;
 	} else {
-		alert(kNo + " ??? : 漢字の通し番号を入力してください。");
+		alert(kNo + " : 漢字の通し番号を入力してください。");
 	}
 }
 
