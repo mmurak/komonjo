@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>『古文書文例大字典』検索</title>
+		<link rel="shortcut icon" href="kiwi-bird.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./daijiten.css">
+	</head>
+	<body>
+		<h3>『古文書文例大字典』（1980）検索ヘルパー</h3>
+		<div class="container-flex">
+			<div class="left-section-flex">
+				<div class="input-row">
+					<label for="index">中書検索：</label>
+					<input type="textfield" id="EntryField" placeholder="ひらがなで入力"></input>
+				</div>
+				<div class="input-row">
+					<label for="index">文例番号：</label>
+					<input type="textfield" id="BunreiNoField"placeholder="半角数字で入力"></input>
+				</div>
+				<div class="input-row">
+					<div>慣用句：　</div>
+					<table id="StrokeIdTable" style="text-align: center;border-spacing: 0;" border="1">
+						<tr>
+							<td><button onclick="javascript:setKanyo(this);">之</button></td>
+							<td><button onclick="javascript:setKanyo(this);">下</button></td>
+							<td><button onclick="javascript:setKanyo(this);">々</button></td>
+							<td><button onclick="javascript:setKanyo(this);">不</button></td>
+							<td><button onclick="javascript:setKanyo(this);">及</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setKanyo(this);">処</button></td>
+							<td><button onclick="javascript:setKanyo(this);">由</button></td>
+							<td><button onclick="javascript:setKanyo(this);">申</button></td>
+							<td><button onclick="javascript:setKanyo(this);">以</button></td>
+							<td><button onclick="javascript:setKanyo(this);">可</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setKanyo(this);">成</button></td>
+							<td><button onclick="javascript:setKanyo(this);">自</button></td>
+							<td><button onclick="javascript:setKanyo(this);">仰</button></td>
+							<td><button onclick="javascript:setKanyo(this);">如</button></td>
+							<td><button onclick="javascript:setKanyo(this);">有</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setKanyo(this);">至</button></td>
+							<td><button onclick="javascript:setKanyo(this);">在</button></td>
+							<td><button onclick="javascript:setKanyo(this);">存</button></td>
+							<td><button onclick="javascript:setKanyo(this);">事</button></td>
+							<td><button onclick="javascript:setKanyo(this);">参</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setKanyo(this);">依</button></td>
+							<td><button onclick="javascript:setKanyo(this);">所</button></td>
+							<td><button onclick="javascript:setKanyo(this);">於</button></td>
+							<td><button onclick="javascript:setKanyo(this);">者</button></td>
+							<td><button onclick="javascript:setKanyo(this);">若</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setKanyo(this);">度</button></td>
+							<td><button onclick="javascript:setKanyo(this);">為</button></td>
+							<td><button onclick="javascript:setKanyo(this);">候</button></td>
+							<td><button onclick="javascript:setKanyo(this);">致</button></td>
+							<td><button onclick="javascript:setKanyo(this);">進</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setKanyo(this);">就</button></td>
+							<td><button onclick="javascript:setKanyo(this);">無</button></td>
+							<td><button onclick="javascript:setKanyo(this);">然</button></td>
+							<td><button onclick="javascript:setKanyo(this);">給</button></td>
+							<td><button onclick="javascript:setKanyo(this);">儀</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="javascript:setKanyo(this);">罷</button></td>
+							<td><button onclick="javascript:setKanyo(this);">雖</button></td>
+							<td><button onclick="javascript:setKanyo(this);">縦</button></td>
+						</tr>
+					</table>
+					<div>　</div>
+				</div>
+				<div class="input-row">
+					<label for="index">序文等：</label>
+					<select id="PreambleSelector"></select>
+				</div>
+				<div class="input-row">
+					<label for="index">書出・書止：</label>
+					<select id="ReferenceSelector" onchange="selectorChange(this);">
+					<option value="0" selected></option>
+					<option value="1">公文書の書出・書止</option>
+					<option value="2">書状の書出・書止</option>
+					</select>
+				</div>
+			</div>
+			<div id="CandidatePanel" class="right-content"></div>
+		</div>
+		<div class="footer">
+		使用するには国立国会図書館デジタルコレクションの<a href="https://www.ndl.go.jp/jp/use/digital_transmission/individuals_index.html">個人向けデジタル化資料送信サービス</a>に登録、ログインしておく必要があります。
+		</div>
+
+		<script src="./assets/bunreiIndex.js"></script>
+		<script src="./scripts/bunreiDaijiten.js"></script>
+	</body>
+</html>
