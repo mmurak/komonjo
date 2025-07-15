@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>『古文書字叢』検索</title>
+		<link rel="shortcut icon" href="kiwi-bird.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./daijiten.css">
+	</head>
+	<body>
+		<h3>『古文書字叢』（1990）検索ヘルパー</h3>
+		<div class="container-flex">
+			<div class="left-section-flex">
+				<div class="input-row">
+					<label for="index">索引検索：</label>
+					<input type="textfield" id="EntryField" placeholder="ひらがな又はカタカナ"></input>
+				</div>
+				<div class="input-row">
+					<label for="index">漢字番号：</label>
+					<input type="textfield" id="KanjiNoField"placeholder="半角数字で入力"></input>
+				</div>
+				<div class="input-row">
+					<label for="index">まえがき等：</label>
+					<select id="PreambleSelector"></select>
+				</div>
+				<div class="input-row">
+					<label for="index">カラム：　　</label>
+					<select id="ColumnSelector"></select>
+				</div>
+				<div class="input-row">
+					<label for="index">各種資料：　</label>
+					<select id="ReferenceSelector"></select>
+				</div>
+			</div>
+			<div id="CandidatePanel" class="right-content"></div>
+		</div>
+		<div class="footer">
+		使用するには国立国会図書館デジタルコレクションの<a href="https://www.ndl.go.jp/jp/use/digital_transmission/individuals_index.html">個人向けデジタル化資料送信サービス</a>に登録、ログインしておく必要があります。
+		</div>
+
+		<script src="./assets/jisouIndex.js"></script>
+		<script src="./scripts/jisou.js"></script>
+	</body>
+</html>
