@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+.ParentContainer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+#Title{
+	font-size: 150%;
+}
+#AlignRightA{
+	text-align: right;
+}
+.fixed-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ccc;
+	padding: 10px 20px;
+	z-index: 1000;
+	box-sizing: border-box;
+}
+.content {
+	margin-top: 120px;
+	padding: 20px;
+}
+a {
+	color: blue;
+}
+
+a:visited {
+	color: blue;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: lightgray;
+	text-align: center;
+}

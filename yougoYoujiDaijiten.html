@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>『古文書用字用語大事典』検索</title>
+		<link rel="shortcut icon" href="kiwi-bird.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./yougoYoujiDaijiten.css">
+	</head>
+	<body>
+		<header class="fixed-header">
+			<div class="ParentContainer">
+				<span id="Title">『古文書用字用語大事典』（池田正一郎著／新人物往来社 1995）</span>
+				<span id="AlignRight">
+					<a href="https://dl.ndl.go.jp/pid/13231550/1/5" target="_black">はしがき</a>
+					<a href="https://dl.ndl.go.jp/pid/13231550/1/7" target="_black">凡例</a>
+					<a href="https://dl.ndl.go.jp/pid/13231550/1/564" target="_black">奥付</a>
+				</span>
+			</div>
+			<div class="container-flex">
+				<div class="left-section-flex">
+					<label for="HeadCB">
+						<input type="checkbox" id="HeadCB" checked></input>
+						前方一致
+					</label>
+					<label for="TailCB">
+						<input type="checkbox" id="TailCB"></input>
+						後方一致
+					</label>
+					<div class="input-row">
+						<label for="index">検索語：</label>
+						<input type="textfield" id="EntryField" placeholder="ひらがなで入力" size="50"></input>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="CandidatePanel" class="content">
+		<ul>
+		<li>検索語はひらがなで入力してください。</li>
+		<li>検索語に含まれる濁点や半濁点、拗音、促音は、処理に先立って直音に変換されます。</li>
+		<li>検索語入力欄の内容は、［Esc］でクリアすることもできます。</li>
+		<li>検索結果のコマ番号右横に「*」が付されている語は一般語彙として立項されているものです。</li>
+		<li>（索引データは手入力のため、間違いがあるかもしれません。）</li>
+		</ul>
+		</div>
+		<div>　</div><div>　</div>
+		<div class="footer">
+		使用するには国立国会図書館デジタルコレクションの<a href="https://www.ndl.go.jp/jp/use/digital_transmission/individuals_index.html">個人向けデジタル化資料送信サービス</a>に登録、ログインしておく必要があります。
+		</div>
+
+		<script src="./assets/yougoYoujiDaijitenIndex.js"></script>
+		<script src="./scripts/yougoYoujiDaijitenIndex.js"></script>
+	</body>
+</html>
