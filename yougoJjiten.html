@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>『古文書用語辞典』検索</title>
+		<link rel="shortcut icon" href="redKiwiBird.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./yougoJiten.css">
+		<style>
+		</style>
+	</head>
+	<body>
+		<header class="fixed-header">
+			<div class="ParentContainer">
+				<span id="Title">『古文書用語辞典』（荒居英次 他／柏書房 1983）</span>
+				<span id="AlignRight">
+					<a href="https://dl.ndl.go.jp/pid/12193474/1/4" target="_blank">はじめに</a>
+					<a href="https://dl.ndl.go.jp/pid/12193474/1/5" target="_blank">例言</a>
+					<a href="https://dl.ndl.go.jp/pid/12193474/1/7" target="_blank">編集委員・協力/執筆者</a>
+					<a href="https://dl.ndl.go.jp/pid/12193474/1/238" target="_blank">奥付</a>
+				</span>
+			</div>
+			<div>
+				検索語入力：　<input type="text" id="EntryField" class="entry-field" placeholder="全角ひらがなで検索語を入力" size="50"/><br/>
+				難読画引索引：<select id="Nandoku">
+				<option value="0" selected>- select -</option>
+				<option value="234">1〜4画</option>
+				<option value="235">4〜8画</option>
+				<option value="236">8〜12画</option>
+				<option value="237">12〜19画</option>
+				<option value="238">19画以上</option>
+				</select>
+			</div>
+		</header>
+		<div id="UtilityPanel" class="content">
+		<div class="footer">
+		使用するには国立国会図書館デジタルコレクションの<a href="https://www.ndl.go.jp/jp/use/digital_transmission/individuals_index.html">個人向けデジタル化資料送信サービス</a>に登録、ログインしておく必要があります。
+		</div>
+		<script src="./assets/yougoJitenIndex.js"></script>
+		<script src="./scripts/yougoJiten.js"></script>
+    </body>
+</html>
+
